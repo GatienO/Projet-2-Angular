@@ -58,10 +58,9 @@ export class DashboardComponent implements OnInit {
         onClick: (event, elements) => {
           if (elements && elements.length > 0) {
             const elementIndex = elements[0].index;
-            const countryName = this.chart.data.labels[elementIndex];
-            // Redirection vers la page détail du pays
-            this.router.navigate(['/detail', countryName]);
-          }
+            const countryId = this.chart.data.labels[elementIndex].toLowerCase().replace(' ', '-');
+            this.router.navigate(['/detail', countryId]);
+        }
         }
       }
     });

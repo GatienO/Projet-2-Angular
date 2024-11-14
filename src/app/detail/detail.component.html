@@ -1,19 +1,16 @@
 <div class="detail-container" ngIf="countryData">
-    <h1>Détails pour {{ countryData.name }}</h1>
-    <p>Nombre de participations aux Jeux Olympiques : {{ countryData.participations }}</p>
-  
-    <h2>Médailles Gagnées</h2>
-    <ul>
-      <li>Médailles d’Or : {{ countryData.medals.gold }}</li>
-      <li>Médailles d’Argent : {{ countryData.medals.silver }}</li>
-      <li>Médailles de Bronze : {{ countryData.medals.bronze }}</li>
-    </ul>
-  
-    <h2>Évolution des médailles aux différentes éditions</h2>
-    <div class="chart-container">
-      <canvas id="lineChart"></canvas>
-    </div>
-  
+  <h1>Détails pour {{ countryData.name }}</h1>
+  <p>Nombre de participations aux Jeux Olympiques : {{ countryData.participations }}</p>
 
+  <h2>Médailles Gagnées</h2>
+  <ul>
+    <li>Médailles d’Or : {{ countryData.medals.gold }}</li>
+    <li>Médailles d’Argent : {{ countryData.medals.silver }}</li>
+    <li>Médailles de Bronze : {{ countryData.medals.bronze }}</li>
+  </ul>
+
+  <h2>Évolution des médailles aux différentes éditions</h2>
+  <div class="chart-container">
+    <canvas id="lineChart"></canvas>
   </div>
-  
+</div>
